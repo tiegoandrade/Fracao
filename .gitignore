@@ -6,11 +6,11 @@
 
 .classpath
 .metadata
-.recommenders
 .project
 .settings
 bin
 target
+.recommenders
 
 *.pydevproject
 tmp/
