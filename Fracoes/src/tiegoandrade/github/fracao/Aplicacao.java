@@ -66,12 +66,15 @@ public class Aplicacao {
 	/**
 	 * Realiza a soma entre duas frações.
 	 */
-	public void somar() {
+	public void somar() throws FracaoException {
 		System.out.print("Insira a primeira fração da operação:");
-
+				
 		// Variável que recebe a entrada do usuário.
 		String fracao1 = Console.readString();
-
+		
+		// Verifica se a fração foi digitada de acordo com o padrão.
+		BaseFracao.validarFracao(fracao1);
+		
 		/* 
 		 * Objeto que recebe a fração e distribui seus valores para os devidos
 		 * atributos.
@@ -84,6 +87,7 @@ public class Aplicacao {
 		
 		System.out.print("Insira a Segunda fração da operação:");
 		String fracao2 = Console.readString();
+		BaseFracao.validarFracao(fracao2);
 		Scanner scanner2 = new Scanner(fracao2);
 		scanner2.useDelimiter("/");
 		int numerador2 = scanner2.nextInt();
@@ -101,9 +105,10 @@ public class Aplicacao {
 	/**
 	 * Realiza a subtração entre duas frações.
 	 */
-	public void subtrair() {
+	public void subtrair() throws FracaoException {
 		System.out.print("Insira a primeira fração da operação:");
 		String fracao1 = Console.readString();
+		BaseFracao.validarFracao(fracao1);
 		Scanner scanner1 = new Scanner(fracao1);
 		scanner1.useDelimiter("/");
 		int numerador1 = scanner1.nextInt();
@@ -112,6 +117,7 @@ public class Aplicacao {
 		
 		System.out.print("Insira a Segunda fração da operação:");
 		String fracao2 = Console.readString();
+		BaseFracao.validarFracao(fracao2);
 		Scanner scanner2 = new Scanner(fracao2);
 		scanner2.useDelimiter("/");
 		int numerador2 = scanner2.nextInt();
@@ -128,9 +134,10 @@ public class Aplicacao {
 	/**
 	 * Realiza a multiplicação entre duas frações.
 	 */
-	public void multiplicar() {
+	public void multiplicar() throws FracaoException {
 		System.out.print("Insira a primeira fração da operação:");
 		String fracao1 = Console.readString();
+		BaseFracao.validarFracao(fracao1);
 		Scanner scanner1 = new Scanner(fracao1);
 		scanner1.useDelimiter("/");
 		int numerador1 = scanner1.nextInt();
@@ -139,6 +146,7 @@ public class Aplicacao {
 		
 		System.out.print("Insira a Segunda fração da operação:");
 		String fracao2 = Console.readString();
+		BaseFracao.validarFracao(fracao2);
 		Scanner scanner2 = new Scanner(fracao2);
 		scanner2.useDelimiter("/");
 		int numerador2 = scanner2.nextInt();
@@ -155,9 +163,10 @@ public class Aplicacao {
 	/** 
 	 * Realiza a divisão entre duas frações.
 	 */
-	public void dividir() {
+	public void dividir() throws FracaoException {
 		System.out.print("Insira a primeira fração da operação:");
 		String fracao1 = Console.readString();
+		BaseFracao.validarFracao(fracao1);
 		Scanner scanner1 = new Scanner(fracao1);
 		scanner1.useDelimiter("/");
 		int numerador1 = scanner1.nextInt();
@@ -166,6 +175,7 @@ public class Aplicacao {
 		
 		System.out.print("Insira a Segunda fração da operação:");
 		String fracao2 = Console.readString();
+		BaseFracao.validarFracao(fracao2);
 		Scanner scanner2 = new Scanner(fracao2);
 		scanner2.useDelimiter("/");
 		int numerador2 = scanner2.nextInt();

@@ -1,5 +1,8 @@
 package tiegoandrade.github.fracao;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Classe que representa a lógica para a resolução de frações.
  * 
@@ -35,7 +38,27 @@ public class BaseFracao {
 	 */
 	public BaseFracao() {
 	}
-
+	
+	/**
+	 * Valida a fração em um padrão pré-definido.
+	 * 
+	 * @param fracao Fração que será validada.
+	 * 
+	 * @throws FracaoException Lançada caso o padrão não seja respeitado.
+	 */
+	public static void validarFracao(String fracao) throws FracaoException {
+		String regex = "\\d/\\d";
+		
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(fracao);
+		
+		if(!m.matches()) {
+			
+			throw new FracaoException("A fração não corresponde com o padrão utilizado");
+			
+		}
+	}
+	
 	/**
 	 * Resolve determina fração.
 	 * 
