@@ -1,13 +1,3 @@
-/*
- * BaseFracao
- *
- * v1.0
- *
- * 18-08-2016
- * 
- * O propósito desse programa é realizar operações com frações.
- */
-
 package tiegoandrade.github.fracao;
 
 /**
