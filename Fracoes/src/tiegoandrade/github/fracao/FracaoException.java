@@ -9,7 +9,14 @@ package tiegoandrade.github.fracao;
  */
 @SuppressWarnings("serial")
 public class FracaoException extends Exception {
-
+	
+	/**
+	 * Construtor
+	 * 
+	 * @see Exception$Exception(String)
+	 * 
+	 * @param message Mensagem lançada pelo aplicativo caso haja algum erro.
+	 */
 	public FracaoException(String message) {
 		super(message);
 	}
